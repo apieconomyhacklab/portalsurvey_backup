@@ -1,0 +1,70 @@
+intro:
+  lead-in: "API consumer focused"
+  heading: Developer Portal Survey 2018
+  btn: Tell Me More
+
+services:
+  heading: Details
+  subheading: "Survey is directed at developers who use developer portals. Survey is part of long term <a href='https://medium.com/api-economy-hacklab'>API Economy related research</a>. Survey is implemented with LimeSurvey and all responses are anonymised." 
+  service:
+    - icon: fa fa-shopping-cart
+      heading: API Consumer
+      text: If you use APIs in developing apps, this is a survey for you!
+
+portfolio:
+  heading: Portfolio
+  subheading: Lorem ipsum dolor sit amet consectetur.
+
+about:
+  heading: About
+  subheading: Lorem ipsum dolor sit amet consectetur.
+  timeline:
+    - image: 
+      date: July - Aug 2018
+      title: Background research 
+      text: After the summer I went through previous research about developer portals. I also visited plenty of portals and discussed the topic with my developer network members.  
+    - image: 
+      date: Sept - Oct 2018
+      title: Prepare and test survey 
+      text: In September I crafted the survey for most parts. In October survey was tested by a developer (API Consumer) to verify that it makes sense. 
+    - image: 
+      date: Nov 1st - 20th 2018
+      title: Survey open!
+      text: Survey will be open for 20 days. 
+    - image: 
+      date: Nov - Dec 2018
+      title: Analysis and publication
+      text: The results are analyzed and blog post will be written in Medium.com. Survey data is uploaded to Github.  
+
+  end1: Be Part
+  end2: Of Our
+  end3: Story!
+
+team:
+  heading: Researcher
+  subheading: Survey is academic and follows good academic practices.
+  members:
+    - name: Jarkko Moilanen
+      role: Researcher, API Economist, Author of API Economy 101 -book
+      img: img/team/1.png
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#" 
+        - icon: fa fa-github
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
+
+  text: Survey is conducted by Jarkko Moilanen, PhD (peerproduction driven ecosystems). Jarkko has conducted several surveys among hacker and 3D printing communities. For the past 6 years Jarkko has focused on API Economy and developer eXperience (DX) is his passion. Jarkko is also igniter and author of API Economy 101 book in Finnish, founder of APIOps (term coined by Jarkko 2015) and API Finland communities, organizer of APIdays Nordic 2016. 
+
+
+clients:
+  - img: img/logos/lime.png
+    url: "https://www.limesurvey.org"
+  - img: img/logos/github.png 
+    url: "https://github.com"
+  - img: img/logos/up.png
+    url: "https://www.upcloud.com/"
+  - img: img/logos/apitalisti.png
+    url: "https://apitalisti.fi"
+

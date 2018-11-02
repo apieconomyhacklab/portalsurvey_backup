@@ -1,0 +1,284 @@
+---
+layout: default
+---
+{%- assign assets_path = "assets/" -%}
+{%- if site.assets_path -%}
+  {%- assign assets_path = site.assets_path -%}
+{%- endif -%}
+    {% assign ws = '' %}
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text" style="margin-top:-50px;">
+          <div class="intro-lead-in">{{ site.data.home.intro.lead-in }}</div>
+          <div class="intro-heading text-uppercase">{{ site.data.home.intro.heading }}</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="color:#000;margin: 5px;" href="#details">{{ site.data.home.intro.btn }}</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="color:#000;margin: 5px;" href="http://94.237.31.22/index.php/843528?lang=en">Launch Survey!</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Details -->
+    <section id="details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.services.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.services.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+  	       <div class="col-lg-12 text-center">
+            <h4 class="service-heading">Purpose</h4>
+            <p class="text-muted">Aim is to collect information about developer preferences, what works and what does not work. Results can be used in designing new developer portals, drive more trafic to APIs accessed via more attractive and developer focused API portals. Results also help in understanding what kind of content works in B2D marketing.</p>
+
+            <p class="text-muted"><b>Survey participation is anonymized</b></p>
+            
+
+          </div>
+        </div>
+        <div class="row text-center">
+           <div class="col-lg-12 text-center">
+            <h4 class="service-heading">Target audience</h4>
+            <p class="text-muted">The survey is targeted at application developers who utilize APIs in building new apps.</p>
+          </div>
+        </div>
+        <div class="row text-center">
+           <div class="col-lg-12 text-center">
+            <h4 class="service-heading">Survey structure</h4>
+            <p class="text-muted">First set of questions is about expectations. What kind of items developers want to see when they enter portal?</p>
+            <p class="text-muted">Second set is empirical material based.</p>
+            <p class="text-muted">The last part is background information about respondents.</p>
+          </div>
+        </div>
+        <div class="row text-center">
+           <div class="col-lg-12 text-center">
+            <h4 class="service-heading">Data policy</h4>
+            <p class="text-muted">Although universities are not involved in this research, it is conducted according to principles of proper scientific research. Results might end up in academic article written next year. Collected data (anonymised) will be uploaded to <a href="https://github.com/apieconomyhacklab/surveydata" target="top">Github</a> for others to consume (in further research). </p>
+            <p class="text-muted">
+              Survey does not ask for your email, name, address, age or gender information. Questions related to your background are in the last section and those are not mandatory. 
+            </p>
+            <p class="text-muted">Since survey is answered anonymously GDPR does not apply. Read more about <a href="https://medium.com/api-economy-hacklab/privacy-publication-and-data-policy-79362b988cca">API Economy Hacklab data policy</a></p>
+            
+          </div>
+        </div>
+        <div class="row text-center">
+           <div class="col-lg-12 text-center">
+            <h4 class="service-heading">Ready to participate?</h4>
+            <p class="text-muted">It takes about 10-15 minutes to <a href="https://94-237-31-22.de-fra1.host.upcloud.com/index.php/843528">complete survey</a>.</p>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="color:#000;margin: 5px;" href="http://94.237.31.22/index.php/843528">Launch Survey!</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Research enablers</h2>
+          </div>
+        <div class="row">
+          {%- for client in site.data.home.clients -%}
+          {% assign ws = '' %}
+          <div class="col-md-3 col-sm-6">
+            <a href="{{ client.url }}">
+              <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ client.img }}" alt="">
+            </a>
+          </div>
+          {%-  endfor -%}
+        {% assign ws = '' %}
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Grid 
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.portfolio.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.portfolio.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          {%- for project in site.projects -%}
+          {% assign ws = '' %}
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>{{ project.client }}</h4>
+              <p class="text-muted">{{ project.category }}</p>
+            </div>
+          </div>
+          {%- endfor -%}
+        {% assign ws = '' %}
+        </div>
+      </div>
+    </section>
+  -->
+
+    <!-- About -->
+    <section id="timeline" style="background-color: #ddd;">
+      <div class="container" style="background-color: #ddd;">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Timeline of the research</h2>
+            <h3 class="section-subheading text-muted">Planned timeline of the research. I'm doing the research on my freetime and thus timeline is rather relaxed. </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              {%- for time in site.data.home.about.timeline -%}
+              {% assign ws = '' %}
+              <li{% cycle '', ' class="timeline-inverted"' %}>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="{{ assets_path }}{{ time.image }}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>{{ time.date }}</h4>
+                    <h4 class="subheading">{{ time.title }}</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">{{ time.text  }}</p>
+                  </div>
+                </div>
+              </li>
+              {%- endfor -%}
+              {% assign ws = '' %}
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4><a style="color:#fff;hover:#fff;" href="http://94.237.31.22/index.php/843528">Participate <br/> in the <br/>survey!</a></h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team" style="background-color: #ddd;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.team.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.team.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          {%- for member in site.data.home.team.members -%}
+          {% assign ws = '' %}
+          <!-- <div class="col-sm-4"> -->
+	         <div class="col-lg-12 text-center">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{{ assets_path }}{{ member.img }}" alt="">
+              <h4>{{ member.name }}</h4>
+              <p class="text-muted">{{ member.role }}</p>
+              <ul class="list-inline social-buttons">
+                {%- for sm in member.social-buttons -%}
+                {% assign ws = '' %}
+                <li class="list-inline-item">
+                  <a href="{{ sm.url }}">
+                    <i class="{{ sm.icon }}"></i>
+                  </a>
+                </li>
+                {%- endfor -%}
+              {% assign ws = '' %}
+              </ul>
+            </div>
+          </div>
+          {%- endfor -%}
+        {% assign ws = '' %}
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">Survey is conducted by Jarkko Moilanen, PhD (Peer Production Driven Ecosystems). Jarkko has conducted several surveys among hacker and 3D printing communities. 
+            </p>
+            <p class="large text-muted">For the past 6 years Jarkko has focused on API Economy and Developer eXperience (DX) is his passion. Jarkko is also igniter and author of API Economy 101 book (in Finnish), founder of APIOps (term coined by Jarkko 2015) and API Finland communities, organizer of APIdays Nordic 2016. 
+            </p>
+            <p class="large text-muted">More information about Jarkko can be found from <a href="https://www.linkedin.com/in/jarkkomoilanen/">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact information</h2>
+            <h3 class="section-subheading" style="color: #fff;">For further questions, contact details below</h3>
+          </div>
+        </div>
+        <div class="row">
+          
+           <div class="col-lg-12 text-center">
+            <div class="team-member">
+              <h4  style="color:#fff;">Jarkko Moilanen (PhD)</h4>
+              <h5 style="color:#fff;">Email: jarkko@vimo.fi</h5>
+              <h5 style="color:#fff;">Twitter: <a href="https://twitter.com/kyyberi">@kyyberi<a/></h5>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.contact.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.contact.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="{{ site.data.home.contact.name }}" required="required" data-validation-required-message="{{ site.data.home.contact.name-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="{{ site.data.home.contact.email }}" required="required" data-validation-required-message="{{ site.data.home.contact.email-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="{{ site.data.home.contact.phone }}" required="required" data-validation-required-message="{{ site.data.home.contact.phone-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="{{ site.data.home.contact.message }}" required="required" data-validation-required-message="{{ site.data.home.contact.message-required }}"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">{{ site.data.home.contact.btn }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
